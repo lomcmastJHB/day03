@@ -1,11 +1,11 @@
 ft_swap.c
 int main(void)
 {
-    char str[] = "f";
-    char str1[] = "d";
+    int i = 8;
+    int r = 4;
 
-    ft_swap(str, str1);
-    printf("%s\n", str);
+    ft_swap(i, r);
+    printf("%d\n",i);
     return (0);
 }
 
