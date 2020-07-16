@@ -9,3 +9,94 @@ int main(void)
     return (0);
 }
 
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
+}
+
+void	ft_putnbr(int nb)
+{
+	if (nb < 0)
+	{
+		nb = -nb;
+	}
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	else
+		ft_putchar(nb + '0');
+}
+
+int		main(void)
+{
+	int a;
+	int *ptr;
+	int **ptr2;
+	int ***ptr3;
+	int ****ptr4;
+	int *****ptr5;
+	int ******ptr6;
+	int *******ptr7;
+	int ********ptr8;
+	int *********ptr9;
+
+	a = 7;
+	ptr = &a;
+	ptr2 = &ptr;
+	ptr3 = &ptr2;
+	ptr4 = &ptr3;
+	ptr5 = &ptr4;
+	ptr6 = &ptr5;
+	ptr7 = &ptr6;
+	ptr8 = &ptr7;
+	ptr9 = &ptr8;
+
+	ft_putnbr(*********ptr9);
+	ft_putchar('\n');
+ 	ft_ultimate_ft(ptr9);
+ 	ft_putnbr(*********ptr9);
+	return (0);
+}
+
+
+
+
+
+
+ft_ft.c
+int main(void)
+{
+  int c;
+
+  c = 0;
+  printf("%d\n", c);
+  ft_ft(&c);
+  printf("%d", c);
+  return (0);
+}
+
+ft_div_mod.c
+{
+	int  r;
+	int  e;
+	int  x;
+	int  s;
+
+	ft_div_mod(r, e, &x, &s);
+	printf("%d %d\n", x, s);
+	return (0);
+}
+
+ft_ul
+{
+	int a;
+	int b;
+	
+	a = 4;
+	b = 2;
+	ft_ultimate_div_mod(&a, &b);
+	printf("%d, %d\n", &a, &b);
+	return (0);
+}
